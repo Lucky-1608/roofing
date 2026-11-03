@@ -1,0 +1,11 @@
+node_modules/
+dist/
+dist-ssr/
+.env
+.env.*
+*.local
+.tanstack/
+.wrangler/
+*.zip
+.DS_Store
+Thumbs.db
