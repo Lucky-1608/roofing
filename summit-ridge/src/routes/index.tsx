@@ -16,7 +16,15 @@ function Home() {
 
   return (
     <>
-      <header className="bar"><strong>{b.name}</strong><a className="btn sm" href={`tel:${b.phone.replace(/\D/g, "")}`}>{b.phone}</a></header>
+      <header className="bar">
+        <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+          <strong>{b.name}</strong>
+          <span style={{ fontSize: "0.75rem", background: "#fef3c7", color: "#92400e", padding: "2px 8px", borderRadius: "999px", fontWeight: 600 }}>
+            🧪 Sandbox Ready
+          </span>
+        </div>
+        <a className="btn sm" href={`tel:${b.phone.replace(/\D/g, "")}`}>{b.phone}</a>
+      </header>
 
       <section className="hero"><div className="wrap">
         <h1>{site.hero.headline}</h1><p>{site.hero.sub}</p>
