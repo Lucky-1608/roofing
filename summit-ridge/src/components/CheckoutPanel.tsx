@@ -36,7 +36,7 @@ export function CheckoutPanel({ planKey, onClose }: { planKey: PlanKey; onClose:
     <div className="modal" role="dialog" aria-modal="true" aria-label={`Checkout: ${plan.label}`} onClick={onClose}>
       <div className="sheet" onClick={(e) => e.stopPropagation()}>
         <button className="x" onClick={onClose} aria-label="Close">×</button>
-        
+
         <div className="sandbox-bar">
           <span>🧪 <strong>Sandbox Mode:</strong> {sandbox ? "Active (Test Cards Allowed)" : "Live"}</span>
           <button type="button" className="tag-btn" onClick={() => setSandbox(!sandbox)}>
